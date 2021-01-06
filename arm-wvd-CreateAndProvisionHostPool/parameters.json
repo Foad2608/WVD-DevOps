@@ -137,10 +137,7 @@
         "workspaceResourceGroup": {
             "value": "WVDRessources"
         },
-        "workspaceName": {
-            "value": "WS-01"
-        },
-        "workspaceLocation": {
+                "workspaceLocation": {
             "value": "eastus"
         },
         "allApplicationGroupReferences": {
