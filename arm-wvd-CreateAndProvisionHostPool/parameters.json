@@ -1,0 +1,150 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "artifactsLocation": {
+            "value": "https://wvdportalstorageblob.blob.core.windows.net/galleryartifacts/Configuration_12-15-2020.zip"
+        },
+        "nestedTemplatesLocation": {
+            "value": "https://catalogartifact.azureedge.net/publicartifacts/Microsoft.Hostpool-ARM-1.0.15-preview/"
+        },
+        "hostpoolName": {
+            "value": "HP-03"
+        },
+        "hostpoolDescription": {
+            "value": "Created through the WVD extension"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "validationEnvironment": {
+            "value": false
+        },
+        "addToWorkspace": {
+            "value": true
+        },
+        "hostpoolType": {
+            "value": "Pooled"
+        },
+        "loadBalancerType": {
+            "value": "BreadthFirst"
+        },
+        "customRdpProperty": {
+            "value": ""
+        },
+        "vmTemplate": {
+            "value": "{\"domain\":\"foadak.com\",\"galleryImageOffer\":\"office-365\",\"galleryImagePublisher\":\"MicrosoftWindowsDesktop\",\"galleryImageSKU\":\"20h1-evd-o365pp\",\"imageType\":\"Gallery\",\"imageUri\":null,\"customImageId\":null,\"namePrefix\":\"wvd\",\"osDiskType\":\"StandardSSD_LRS\",\"useManagedDisks\":true,\"vmSize\":{\"id\":\"Standard_DS1_v2\",\"cores\":1,\"ram\":3.5},\"galleryItemId\":\"MicrosoftWindowsDesktop.office-36520h1-evd-o365pp\"}"
+        },
+        "tokenExpirationTime": {
+            "value": "2021-01-07T20:26:30.198Z"
+        },
+        "administratorAccountUsername": {
+            "value": "adjoin@foadak.com"
+        },
+        "administratorAccountPassword": {
+            "value": null
+        },
+        "createAvailabilitySet": {
+            "value": false
+        },
+        "vmResourceGroup": {
+            "value": "WVDVMs"
+        },
+        "vmLocation": {
+            "value": "westeurope"
+        },
+        "vmSize": {
+            "value": "Standard_DS1_v2"
+        },
+        "vmNumberOfInstances": {
+            "value": 2
+        },
+        "vmNamePrefix": {
+            "value": "wvd"
+        },
+        "vmImageType": {
+            "value": "Gallery"
+        },
+        "vmDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "vmUseManagedDisks": {
+            "value": true
+        },
+        "existingVnetName": {
+            "value": "WVDRessources-vnet"
+        },
+        "existingSubnetName": {
+            "value": "default"
+        },
+        "virtualNetworkResourceGroupName": {
+            "value": "WVDRessources"
+        },
+        "usePublicIP": {
+            "value": false
+        },
+        "createNetworkSecurityGroup": {
+            "value": false
+        },
+        "domain": {
+            "value": ""
+        },
+        "ouPath": {
+            "value": ""
+        },
+        "hostpoolTags": {
+            "value": {}
+        },
+        "applicationGroupTags": {
+            "value": {}
+        },
+        "availabilitySetTags": {
+            "value": {}
+        },
+        "networkInterfaceTags": {
+            "value": {}
+        },
+        "networkSecurityGroupTags": {
+            "value": {}
+        },
+        "publicIPAddressTags": {
+            "value": {}
+        },
+        "virtualMachineTags": {
+            "value": {}
+        },
+        "imageTags": {
+            "value": {}
+        },
+        "apiVersion": {
+            "value": "2019-12-10-preview"
+        },
+        "deploymentId": {
+            "value": "eea5f301-66d9-4353-a783-6caeffa57030"
+        },
+        "vmGalleryImageOffer": {
+            "value": "office-365"
+        },
+        "vmGalleryImagePublisher": {
+            "value": "MicrosoftWindowsDesktop"
+        },
+        "vmGalleryImageSKU": {
+            "value": "20h1-evd-o365pp"
+        },
+        "maxSessionLimit": {
+            "value": 10
+        },
+        "workspaceResourceGroup": {
+            "value": "WVDRessources"
+        },
+        "workspaceName": {
+            "value": "WS-01"
+        },
+        "workspaceLocation": {
+            "value": "eastus"
+        },
+        "allApplicationGroupReferences": {
+            "value": "/subscriptions/2ceac180-012d-40c8-a77f-00f597a9ba8e/resourcegroups/WVDRessources/providers/Microsoft.DesktopVirtualization/applicationgroups/HP-01-DAG,/subscriptions/2ceac180-012d-40c8-a77f-00f597a9ba8e/resourcegroups/WVDRessources/providers/Microsoft.DesktopVirtualization/applicationgroups/RAG-01,/subscriptions/2ceac180-012d-40c8-a77f-00f597a9ba8e/resourcegroups/WVDRessources/providers/Microsoft.DesktopVirtualization/applicationgroups/HP-02-DAG"
+        }
+    }
+}
